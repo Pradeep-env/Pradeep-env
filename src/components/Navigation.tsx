@@ -45,12 +45,12 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-md border-b border-green-400/30">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-md border-b border-orange-500/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <span className="text-2xl font-mono font-bold text-green-400">
-              alex@portfolio:~$
+            <span className="text-2xl font-mono font-bold text-orange-500">
+              [ALEX_CHEN_001]
             </span>
           </div>
 
@@ -63,11 +63,11 @@ const Navigation = () => {
                   onClick={() => scrollToSection(item.href)}
                   className={`px-3 py-2 rounded-md text-sm font-mono font-medium transition-colors duration-200 ${
                     activeSection === item.href.substring(1)
-                      ? 'text-green-400 bg-green-400/10 border border-green-400/30'
-                      : 'text-gray-400 hover:text-green-400 hover:bg-gray-800'
+                      ? 'text-orange-500 bg-orange-500/10 border-2 border-orange-500/30'
+                      : 'text-gray-400 hover:text-orange-500 hover:bg-gray-800'
                   }`}
                 >
-                  ./{item.name.toLowerCase()}
+                  [{item.name.toUpperCase()}]
                 </button>
               ))}
             </div>
@@ -77,7 +77,7 @@ const Navigation = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="bg-gray-800 p-2 rounded-md text-green-400 hover:bg-gray-700 border border-green-400/30"
+              className="bg-gray-800 p-2 rounded-md text-orange-500 hover:bg-gray-700 border-2 border-orange-500/30"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -88,18 +88,18 @@ const Navigation = () => {
       {/* Mobile Navigation */}
       {isOpen && (
         <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-black border-b border-green-400/30">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-black border-b border-orange-500/30">
             {navItems.map((item) => (
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
                 className={`block w-full text-left px-3 py-2 rounded-md text-base font-mono font-medium transition-colors duration-200 ${
                   activeSection === item.href.substring(1)
-                    ? 'text-green-400 bg-green-400/10 border border-green-400/30'
-                    : 'text-gray-400 hover:text-green-400 hover:bg-gray-800'
+                    ? 'text-orange-500 bg-orange-500/10 border-2 border-orange-500/30'
+                    : 'text-gray-400 hover:text-orange-500 hover:bg-gray-800'
                 }`}
               >
-                ./{item.name.toLowerCase()}
+                [{item.name.toUpperCase()}]
               </button>
             ))}
           </div>

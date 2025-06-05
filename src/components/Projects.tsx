@@ -67,15 +67,15 @@ const Projects = () => {
     <section id="projects" className="py-24 bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <div className="font-mono text-green-400 text-lg mb-4">
-            $ ls -la /home/alex/projects/
+          <div className="font-mono text-orange-500 text-lg mb-4">
+            [MISSION_ARCHIVE] CLASSIFIED OPERATIONS
           </div>
-          <h2 className="text-4xl font-mono font-bold text-green-400 mb-4">
-            Repository Archive
+          <h2 className="text-4xl font-mono font-bold text-orange-500 mb-4">
+            COMPLETED OPERATIONS
           </h2>
-          <div className="w-24 h-1 bg-green-400 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-orange-500 mx-auto mb-8"></div>
           <p className="text-lg text-gray-300 font-mono max-w-2xl mx-auto">
-            drwxr-xr-x 6 alex alex 4096 recent_projects.git
+            STATUS: MISSION_SUCCESS | THREAT_LEVEL: NEUTRALIZED
           </p>
         </div>
 
@@ -84,7 +84,7 @@ const Projects = () => {
           {featuredProjects.map((project, index) => (
             <Card 
               key={project.title} 
-              className="group bg-black border border-green-400/30 overflow-hidden hover:border-green-400 transition-all duration-500 hover:shadow-lg hover:shadow-green-400/20"
+              className="group bg-black border-2 border-orange-500/30 overflow-hidden hover:border-orange-500 transition-all duration-500 hover:shadow-lg hover:shadow-orange-500/20"
             >
               <div className="relative overflow-hidden">
                 <img
@@ -95,20 +95,20 @@ const Projects = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="flex space-x-2">
-                    <Button size="sm" className="bg-green-400 text-black hover:bg-green-500 font-mono">
+                    <Button size="sm" className="bg-orange-500 text-black hover:bg-orange-600 font-mono">
                       <Github className="mr-2 h-4 w-4" />
-                      ./code
+                      [INTEL]
                     </Button>
-                    <Button size="sm" className="border border-green-400 text-green-400 hover:bg-green-400/10 font-mono">
+                    <Button size="sm" className="border-2 border-orange-500 text-orange-500 hover:bg-orange-500/10 font-mono">
                       <FileText className="mr-2 h-4 w-4" />
-                      ./demo
+                      [DEPLOY]
                     </Button>
                   </div>
                 </div>
               </div>
               
               <CardContent className="p-6">
-                <h3 className="text-xl font-mono font-semibold mb-3 text-green-400 group-hover:text-green-300 transition-colors duration-300">
+                <h3 className="text-xl font-mono font-semibold mb-3 text-orange-500 group-hover:text-orange-300 transition-colors duration-300">
                   {project.title}
                 </h3>
                 <p className="text-gray-300 font-mono text-sm mb-4 leading-relaxed">
@@ -118,7 +118,7 @@ const Projects = () => {
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 bg-gray-800 border border-green-400/30 text-green-400 text-xs font-mono rounded"
+                      className="px-3 py-1 bg-gray-800 border-2 border-orange-500/30 text-orange-500 text-xs font-mono rounded"
                     >
                       {tech}
                     </span>
@@ -131,14 +131,14 @@ const Projects = () => {
 
         {/* Other Projects Grid */}
         <div>
-          <h3 className="text-2xl font-mono font-semibold text-center mb-8 text-green-400">
-            $ find ./archive -name "*.git"
+          <h3 className="text-2xl font-mono font-semibold text-center mb-8 text-orange-500">
+            [RECON_MISSIONS] SECONDARY_OBJECTIVES
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {otherProjects.map((project, index) => (
               <Card 
                 key={project.title} 
-                className="group bg-black border border-green-400/30 overflow-hidden hover:border-green-400 transition-all duration-300 hover:shadow-lg hover:shadow-green-400/20"
+                className="group bg-black border-2 border-orange-500/30 overflow-hidden hover:border-orange-500 transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/20"
               >
                 <div className="relative overflow-hidden">
                   <img
@@ -150,7 +150,7 @@ const Projects = () => {
                 </div>
                 
                 <CardContent className="p-4">
-                  <h4 className="text-lg font-mono font-semibold mb-2 text-green-400 group-hover:text-green-300 transition-colors duration-300">
+                  <h4 className="text-lg font-mono font-semibold mb-2 text-orange-500 group-hover:text-orange-300 transition-colors duration-300">
                     {project.title}
                   </h4>
                   <p className="text-gray-300 font-mono text-xs mb-3 line-clamp-2">
@@ -160,25 +160,25 @@ const Projects = () => {
                     {project.technologies.slice(0, 3).map((tech) => (
                       <span
                         key={tech}
-                        className="px-2 py-1 bg-gray-800 border border-green-400/30 text-green-400 text-xs font-mono rounded"
+                        className="px-2 py-1 bg-gray-800 border-2 border-orange-500/30 text-orange-500 text-xs font-mono rounded"
                       >
                         {tech}
                       </span>
                     ))}
                     {project.technologies.length > 3 && (
-                      <span className="px-2 py-1 bg-gray-800 border border-green-400/30 text-green-400 text-xs font-mono rounded">
+                      <span className="px-2 py-1 bg-gray-800 border-2 border-orange-500/30 text-orange-500 text-xs font-mono rounded">
                         +{project.technologies.length - 3}
                       </span>
                     )}
                   </div>
                   <div className="flex space-x-2">
-                    <Button size="sm" className="flex-1 text-xs bg-green-400 text-black hover:bg-green-500 font-mono">
+                    <Button size="sm" className="flex-1 text-xs bg-orange-500 text-black hover:bg-orange-600 font-mono">
                       <Github className="mr-1 h-3 w-3" />
-                      code
+                      intel
                     </Button>
-                    <Button size="sm" className="flex-1 text-xs border border-green-400 text-green-400 hover:bg-green-400/10 font-mono">
+                    <Button size="sm" className="flex-1 text-xs border-2 border-orange-500 text-orange-500 hover:bg-orange-500/10 font-mono">
                       <FileText className="mr-1 h-3 w-3" />
-                      demo
+                      deploy
                     </Button>
                   </div>
                 </CardContent>
