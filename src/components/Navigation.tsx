@@ -1,9 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { useTheme } from '@/contexts/ThemeContext';
+import ThemeSelector from './ThemeSelector';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
+  const { theme } = useTheme();
 
   const navItems = [
     { name: 'Home', href: '#home' },
@@ -45,39 +48,40 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-md border-b border-orange-500/30">
+    <nav className={`fixed top-0 left-0 right-0 z-50 ${theme.styles.nav}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <span className="text-2xl font-mono font-bold text-orange-500">
-              [ALEX_CHEN_001]
+            <span className={`text-2xl ${theme.fonts.heading} ${theme.colors.primary}`}>
+              Alex Chen
             </span>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
+          <div className="hidden md:flex items-center space-x-6">
+            <div className="flex items-baseline space-x-4">
               {navItems.map((item) => (
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className={`px-3 py-2 rounded-md text-sm font-mono font-medium transition-colors duration-200 ${
+                  className={`px-3 py-2 rounded-md text-sm ${theme.fonts.main} font-medium transition-colors duration-200 ${
                     activeSection === item.href.substring(1)
-                      ? 'text-orange-500 bg-orange-500/10 border-2 border-orange-500/30'
-                      : 'text-gray-400 hover:text-orange-500 hover:bg-gray-800'
+                      ? `${theme.colors.primary} ${theme.styles.surface} ${theme.colors.border} border-2`
+                      : `${theme.colors.secondary} hover:${theme.colors.primary}`
                   }`}
                 >
-                  [{item.name.toUpperCase()}]
+                  {item.name}
                 </button>
               ))}
             </div>
+            <ThemeSelector />
           </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="bg-gray-800 p-2 rounded-md text-orange-500 hover:bg-gray-700 border-2 border-orange-500/30"
+              className={`${theme.styles.surface} p-2 rounded-md ${theme.colors.primary} hover:${theme.colors.accent} ${theme.colors.border} border-2`}
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -88,20 +92,23 @@ const Navigation = () => {
       {/* Mobile Navigation */}
       {isOpen && (
         <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-black border-b border-orange-500/30">
+          <div className={`px-2 pt-2 pb-3 space-y-1 sm:px-3 ${theme.styles.surface} ${theme.colors.border} border-b`}>
             {navItems.map((item) => (
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className={`block w-full text-left px-3 py-2 rounded-md text-base font-mono font-medium transition-colors duration-200 ${
+                className={`block w-full text-left px-3 py-2 rounded-md text-base ${theme.fonts.main} font-medium transition-colors duration-200 ${
                   activeSection === item.href.substring(1)
-                    ? 'text-orange-500 bg-orange-500/10 border-2 border-orange-500/30'
-                    : 'text-gray-400 hover:text-orange-500 hover:bg-gray-800'
+                    ? `${theme.colors.primary} ${theme.styles.surface} ${theme.colors.border} border-2`
+                    : `${theme.colors.secondary} hover:${theme.colors.primary}`
                 }`}
               >
-                [{item.name.toUpperCase()}]
+                {item.name}
               </button>
             ))}
+            <div className="px-3 py-2">
+              <ThemeSelector />
+            </div>
           </div>
         </div>
       )}
