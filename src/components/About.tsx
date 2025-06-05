@@ -2,39 +2,50 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const About = () => {
   return (
-    <section id="about" className="py-24">
+    <section id="about" className="py-24 bg-gray-900">
       <div className="max-w-5xl mx-auto px-6">
         <div className="mb-16">
-          <h2 className="text-4xl font-light tracking-tight text-center mb-4">
-            About
+          <div className="font-mono text-green-400 text-lg mb-4">
+            $ cat /proc/about
+          </div>
+          <h2 className="text-4xl font-mono font-bold text-green-400 mb-4">
+            System Information
           </h2>
-          <div className="w-16 h-px bg-neutral-900 dark:bg-neutral-100 mx-auto"></div>
+          <div className="w-16 h-px bg-green-400"></div>
         </div>
 
-        <div className="max-w-3xl mx-auto">
-          <div className="space-y-8 text-center">
-            <p className="text-xl font-light text-neutral-600 dark:text-neutral-400 leading-relaxed">
-              I'm a full-stack developer with 6+ years of experience building web applications 
-              that users love. I focus on creating clean, efficient code and intuitive user experiences.
-            </p>
+        <div className="max-w-4xl mx-auto">
+          <div className="space-y-8">
+            <div className="bg-black border border-green-400/30 rounded-lg p-6">
+              <p className="text-gray-300 font-mono text-lg leading-relaxed">
+                <span className="text-green-400">alex@portfolio:~$</span> uptime<br/>
+                <span className="text-gray-400">6+ years experience building scalable web applications, 
+                microservices, and distributed systems. Specializing in full-stack development 
+                with a passion for clean architecture and performance optimization.</span>
+              </p>
+            </div>
             
-            <p className="text-lg font-light text-neutral-500 dark:text-neutral-500 leading-relaxed">
-              My approach combines technical expertise with design thinking. I believe the best 
-              solutions come from understanding both the problem and the people who will use the product.
-            </p>
+            <div className="bg-black border border-green-400/30 rounded-lg p-6">
+              <p className="text-gray-300 font-mono text-lg leading-relaxed">
+                <span className="text-green-400">alex@portfolio:~$</span> ps aux | grep philosophy<br/>
+                <span className="text-gray-400">Code should be readable, maintainable, and elegant. 
+                I believe in test-driven development, continuous integration, and the power 
+                of open-source collaboration.</span>
+              </p>
+            </div>
 
-            <div className="grid md:grid-cols-3 gap-8 mt-16 pt-16 border-t border-neutral-200 dark:border-neutral-800">
-              <div className="text-center">
-                <div className="text-3xl font-light text-neutral-900 dark:text-neutral-100 mb-2">6+</div>
-                <div className="text-sm text-neutral-500 dark:text-neutral-500 tracking-wide uppercase">Years Experience</div>
+            <div className="grid md:grid-cols-3 gap-6 mt-16">
+              <div className="bg-black border border-green-400/30 rounded-lg p-6 text-center">
+                <div className="text-3xl font-mono font-bold text-green-400 mb-2">6+</div>
+                <div className="text-sm font-mono text-gray-400 uppercase tracking-wide">Years Experience</div>
               </div>
-              <div className="text-center">
-                <div className="text-3xl font-light text-neutral-900 dark:text-neutral-100 mb-2">50+</div>
-                <div className="text-sm text-neutral-500 dark:text-neutral-500 tracking-wide uppercase">Projects Delivered</div>
+              <div className="bg-black border border-green-400/30 rounded-lg p-6 text-center">
+                <div className="text-3xl font-mono font-bold text-green-400 mb-2">50+</div>
+                <div className="text-sm font-mono text-gray-400 uppercase tracking-wide">Projects Deployed</div>
               </div>
-              <div className="text-center">
-                <div className="text-3xl font-light text-neutral-900 dark:text-neutral-100 mb-2">15+</div>
-                <div className="text-sm text-neutral-500 dark:text-neutral-500 tracking-wide uppercase">Happy Clients</div>
+              <div className="bg-black border border-green-400/30 rounded-lg p-6 text-center">
+                <div className="text-3xl font-mono font-bold text-green-400 mb-2">15+</div>
+                <div className="text-sm font-mono text-gray-400 uppercase tracking-wide">Happy Clients</div>
               </div>
             </div>
           </div>

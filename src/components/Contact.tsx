@@ -56,27 +56,30 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20">
+    <section id="contact" className="py-24 bg-black">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-            Get In <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Touch</span>
+          <div className="font-mono text-green-400 text-lg mb-4">
+            $ ping alex@portfolio.dev
+          </div>
+          <h2 className="text-4xl font-mono font-bold text-green-400 mb-4">
+            Establish Connection
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"></div>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            I'm always open to discussing new opportunities and interesting projects.
-            Let's connect and see how we can work together!
+          <div className="w-24 h-1 bg-green-400 mx-auto mb-8"></div>
+          <p className="text-lg text-gray-300 font-mono max-w-2xl mx-auto">
+            PING successful. Port 22 open. Ready for secure transmission.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div className="space-y-8">
-            <div>
-              <h3 className="text-2xl font-semibold mb-6">Let's talk about your project</h3>
-              <p className="text-muted-foreground leading-relaxed mb-8">
-                Whether you're looking to build a new application, improve an existing one, 
-                or just want to chat about technology, I'd love to hear from you.
+            <div className="bg-gray-900 border border-green-400/30 rounded-lg p-6">
+              <h3 className="text-2xl font-mono font-semibold mb-6 text-green-400">$ cat connection_info.txt</h3>
+              <p className="text-gray-300 font-mono leading-relaxed mb-8">
+                Looking for collaboration on innovative projects? Ready to discuss 
+                system architecture, code optimization, or new technologies? 
+                Let's establish a secure connection.
               </p>
             </div>
 
@@ -88,32 +91,32 @@ const Contact = () => {
                   href={info.href}
                   target={info.href.startsWith('mailto:') ? '_self' : '_blank'}
                   rel={info.href.startsWith('mailto:') ? '' : 'noopener noreferrer'}
-                  className="flex items-center space-x-4 p-4 rounded-lg hover:bg-muted/50 transition-colors duration-200 group"
+                  className="flex items-center space-x-4 p-4 bg-black border border-green-400/30 rounded-lg hover:border-green-400 transition-colors duration-200 group"
                 >
-                  <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
-                    <info.icon className="w-6 h-6 text-white" />
+                  <div className="w-12 h-12 bg-green-400 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
+                    <info.icon className="w-6 h-6 text-black" />
                   </div>
                   <div>
-                    <div className="font-medium">{info.label}</div>
-                    <div className="text-sm text-muted-foreground">{info.value}</div>
+                    <div className="font-mono font-medium text-green-400">{info.label}</div>
+                    <div className="text-sm font-mono text-gray-400">{info.value}</div>
                   </div>
                 </a>
               ))}
             </div>
 
             {/* Resume Download */}
-            <Card className="border-none bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20">
+            <Card className="bg-gray-900 border border-green-400/30">
               <CardContent className="p-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <h4 className="font-semibold mb-2">Download Resume</h4>
-                    <p className="text-sm text-muted-foreground">
-                      Get a detailed overview of my experience and skills
+                    <h4 className="font-mono font-semibold mb-2 text-green-400">$ cat resume.pdf</h4>
+                    <p className="text-sm font-mono text-gray-400">
+                      Download complete system documentation and credentials
                     </p>
                   </div>
-                  <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
+                  <Button className="bg-green-400 text-black hover:bg-green-500 font-mono">
                     <FileText className="mr-2 h-4 w-4" />
-                    Download
+                    ./download
                   </Button>
                 </div>
               </CardContent>
@@ -121,66 +124,66 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <Card className="border-none bg-card/50 backdrop-blur-sm">
+          <Card className="bg-gray-900 border border-green-400/30">
             <CardHeader>
-              <CardTitle className="text-2xl">Send a Message</CardTitle>
+              <CardTitle className="text-2xl font-mono text-green-400">$ vim message.txt</CardTitle>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="text-sm font-medium mb-2 block">
-                    Your Name
+                  <label htmlFor="name" className="text-sm font-mono font-medium mb-2 block text-green-400">
+                    --name
                   </label>
                   <Input
                     id="name"
                     name="name"
                     type="text"
-                    placeholder="John Doe"
+                    placeholder="username"
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full"
+                    className="w-full bg-black border-green-400/30 text-gray-300 font-mono placeholder:text-gray-500 focus:border-green-400"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="text-sm font-medium mb-2 block">
-                    Email Address
+                  <label htmlFor="email" className="text-sm font-mono font-medium mb-2 block text-green-400">
+                    --email
                   </label>
                   <Input
                     id="email"
                     name="email"
                     type="email"
-                    placeholder="john@example.com"
+                    placeholder="user@domain.com"
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full"
+                    className="w-full bg-black border-green-400/30 text-gray-300 font-mono placeholder:text-gray-500 focus:border-green-400"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="text-sm font-medium mb-2 block">
-                    Message
+                  <label htmlFor="message" className="text-sm font-mono font-medium mb-2 block text-green-400">
+                    --message
                   </label>
                   <Textarea
                     id="message"
                     name="message"
-                    placeholder="Tell me about your project..."
+                    placeholder="echo 'Your message here...'"
                     rows={5}
                     value={formData.message}
                     onChange={handleChange}
                     required
-                    className="w-full resize-none"
+                    className="w-full resize-none bg-black border-green-400/30 text-gray-300 font-mono placeholder:text-gray-500 focus:border-green-400"
                   />
                 </div>
 
                 <Button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white py-3 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg"
+                  className="w-full bg-green-400 text-black hover:bg-green-500 py-3 rounded-lg font-mono font-semibold transition-all duration-300 hover:scale-105 shadow-lg"
                 >
                   <Mail className="mr-2 h-5 w-5" />
-                  Send Message
+                  ./send.sh
                 </Button>
               </form>
             </CardContent>
