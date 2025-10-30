@@ -3,8 +3,9 @@ import '../index.css'
 import Navbar from '../components/Navbar.jsx'
 import heroImage from '../assets/pradeep.png'
 import DotGrid from '../components/DotGrid';
-import About from '../pages/About.jsx'
-import Projects from '../pages/Projects.jsx'
+import About from './About.jsx'
+import Projects from './Projects.jsx'
+import Contact from './Contact.jsx';
 const Home = () => {
   return (
     <div>
@@ -36,6 +37,7 @@ const Home = () => {
       </div>
       <About />
       <Projects />
+      <Contact />
     </div>
   )
 }

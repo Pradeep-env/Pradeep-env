@@ -14,21 +14,21 @@ const Projects = () => {
     {
       "name": "MySQL Simulator",
       "pic": mysql,
-      "techstack": ["ubuntu","cpp","flask","html","css","git","github"],
+      "techstack": ["ubuntu","cpp","flask","html","css","git"],
       "link": "#",
       "github": "https://github.com/Pradeep3122003/mysql"
     },
     {
       "name": "Self Help Group",
       "pic": shg,
-      "techstack": ["ubuntu","vs","figma","postman","flask","react","postgres","git","github"],
+      "techstack": ["ubuntu","vs","figma","postman","flask","react","postgres","git"],
       "link": "#",
       "github": "https://github.com/Pradeep3122003/saraswati-sangha"
     },
     {
       "name": "DataStructure Visualizer",
       "pic": dsa, 
-      "techstack": ["ubuntu","cpp","git","github"],
+      "techstack": ["ubuntu","cpp","git"],
       "link": "#",
       "github": "https://github.com/Pradeep3122003/DataStructures"
     },
@@ -42,21 +42,21 @@ const Projects = () => {
     {
       "name": "Sololeveling Website",
       "pic": sololevel,
-      "techstack": ["vs","figma","react","node","mongo","git"],
+      "techstack": ["vs","figma","react","node","mongo"],
       "link": "https://sololevelup.netlify.app/",
       "github": "#"
     },
     {
       "name": "MyTrain Website",
       "pic": train,
-      "techstack": ["vs","ubuntu","html","css","php","sql","git","github"],
+      "techstack": ["vs","ubuntu","html","css","php","sql","git"],
       "link": "http://mytrain.fwh.is/",
       "github": "https://github.com/Pradeep3122003/MyTrain"
     },
     {
       "name": "Portfolio Website",
       "pic": portfolio,
-      "techstack": ["vs","figma","react","git","github"],
+      "techstack": ["vs","figma","react","git"],
       "link": "https://pradeepkh.netlify.app/",
       "github": "#"
     }
