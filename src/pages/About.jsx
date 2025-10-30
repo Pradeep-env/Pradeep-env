@@ -47,7 +47,7 @@ const About = () => {
            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/500px-Node.js_logo.svg.png" alt="node" />
            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/MySQL_logo.svg/150px-MySQL_logo.svg.png" alt="mysql" />
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/500px-Postgresql_elephant.svg.png" alt="postgresql" />
-            <img src="https://flask.palletsprojects.com/en/stable/_images/flask-name.svg" alt="flask" />
+            <img src="https://flask.palletsprojects.com/en/stable/_static/flask-logo.svg" alt="flask" />
            
             
             <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5a/MongoDB_Fores-Green.svg/500px-MongoDB_Fores-Green.svg.png" alt="mongodb" />
@@ -57,6 +57,10 @@ const About = () => {
              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/BurpSuite_Comunity_Edition.svg/825px-BurpSuite_Comunity_Edition.svg.png" alt="burpsuit" />
            <img src="https://prometheus.io/_next/static/media/prometheus-logo.7aa022e5.svg" alt="prometheus" />
            <img src="https://images.icon-icons.com/2699/PNG/512/grafana_logo_icon_171048.png" alt="grafana" />
+           <img src="https://images.icon-icons.com/3053/PNG/512/postman_macos_bigsur_icon_189815.png" alt="postman" />
+           <img src="https://git-scm.com/images/logos/logomark-orange@2x.png" alt="git" />
+           <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" alt="github" />
+           <img src="https://images.seeklogo.com/logo-png/35/1/flutter-logo-png_seeklogo-354671.png" alt="flutter" />
           </div>
                <h2 style={{"color":"white"}}>Experiance</h2>
                <div className="sub">
