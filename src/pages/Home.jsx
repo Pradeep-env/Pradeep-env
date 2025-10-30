@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar.jsx'
 import heroImage from '../assets/pradeep.png'
 import DotGrid from '../components/DotGrid';
 import About from '../pages/About.jsx'
+import Projects from '../pages/Projects.jsx'
 const Home = () => {
   return (
     <div>
@@ -34,6 +35,7 @@ const Home = () => {
         </div>
       </div>
       <About />
+      <Projects />
     </div>
   )
 }
