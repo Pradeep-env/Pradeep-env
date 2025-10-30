@@ -15,6 +15,7 @@ const About = () => {
                 <div>
                   <h4 style={{ "margin":"3px auto"}}>Graduation</h4>
                   <img src="https://i0.wp.com/sjbit.edu.in/wp-content/uploads/2021/07/VTU-Logo-250x250-1.png?w=250&ssl=1" alt="VTU, Belagavi" style={{"display":"block", "margin":"2px auto"}} />
+                  
                   <p>Computer Science</p>
                   <p style={{"color":"gold"}}>Gold Medalist</p>
                 </div>

@@ -80,7 +80,7 @@ body{
     align-self: center;
   }
   #homeinfo p{
-    font-size: calc(1.5vh + 1.5vw);
+    font-size: calc(1.4vh + 1.4vw);
     margin-bottom: 2vh;
   }
 #about{
@@ -174,21 +174,38 @@ body{
     grid-template-rows: 50% 50%;
     
   }
+  #about{
+    height: auto;
+    padding-bottom: 5vh;
+  }
   #abpanel{
+    height: 140vh;
     grid-template-rows: 50% 50%;
     grid-template-columns: 1fr;
     
   }
-  
-  .abpanel1 #sum{
-    font-size: x-small;
-    padding: 5px;
-    border-radius: 5px;
+  .abpanel1{
+    border: 1px solid white;
   }
+ 
   .abpanel1 .sub{
     width: 95%;
     height: 50%;
+     grid-template-rows:33% 33% 33% ;
+    grid-template-columns:100%;
   }
+  .abpanel1 .sub div{
+    height: 80%;
+    width: 90%;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+  /* .abpanel1 .sub div h4{
+   display: none;
+  } */
   /* .abpanel1 .sub{
     grid-template-rows:33% 33% 33% ;
     grid-template-columns:100% ;
