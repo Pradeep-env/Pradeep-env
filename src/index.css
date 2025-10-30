@@ -194,6 +194,9 @@ body{
     height: auto;
     padding-bottom: 5vh;
   }
+  #about h1{
+    padding-top: 0px;
+  }
   #abpanel{
     height: 140vh;
     grid-template-rows: 50% 50%;
@@ -209,10 +212,10 @@ body{
     grid-template-columns:100%;
   }
   .abpanel1 .sub div{
-    height: 80%;
+    height: 90%;
     width: 90%;
     display: grid;
-    grid-template-rows: 3fr 1fr;
+    grid-template-rows: 2fr 2fr;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
