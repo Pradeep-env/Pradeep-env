@@ -11,6 +11,7 @@ body{
    background-color: rgb(0, 0, 0);
 }
 .navbar {
+  position: fixed;
   padding-left: 2.5vw;
   padding-right: 2.5vw;
   color: aliceblue;
@@ -18,6 +19,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 2;
 }
 .drop{
     height: 20vh;
@@ -50,13 +52,107 @@ body{
 #wallpaper{
     display: none;
   }
- #homeinfo p{
-  background-image: linear-gradient(40deg, #ffffff, #0000ff);
+
+
+  #homepanel{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    color: white;
+    text-align: center;
+    padding-left: 2.5vw;
+  padding-right: 2.5vw;
+  }
+
+   #homeinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+ #homepanel img{
+  display: block;
+    height: 40vh;
+    justify-self: center;
+    align-self: center;
+  }
+  #homeinfo p{
+    font-size: calc(1.5vh + 1.5vw);
+    margin-bottom: 2vh;
+  }
+#about{
+    height: 100vh;
+    width: 100vw;
+  }
+#about h1{
+    font-size: calc(3vh + 3vw);
+    
+    padding-top: 12vh;
+    text-align: center;
+    background-image: linear-gradient(30deg,#3d0cde, #ff8484);
+  -webkit-background-clip: text; /* Chrome / Safari */
+  background-clip: text;         /* Standard */
+  -webkit-text-fill-color: transparent; /* Chrome / Safari glyph transparency */
+  color: transparent;
+  }
+#abpanel{
+    display: grid;
+    
+    height: 70vh;
+    width: 90vw;
+    margin: 0 auto;
+  }
+.abpanel1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+.abpanel1 #sum{
+  width: 90%;
+  padding: 15px;
+  background-image: linear-gradient(40deg, #ffffff, hsl(81, 93%, 26%));
   -webkit-background-clip: text; /* Chrome / Safari */
   background-clip: text;         /* Standard */
   -webkit-text-fill-color: transparent; /* Chrome / Safari glyph transparency */
   color: transparent; 
- }
+  box-shadow: 0px 0px 5px 2px #0eecd6;
+  border-radius: 10px;
+  font-size: calc(1.5vh + 0.5vw);
+}
+.abpanel1 .sub{
+    width: 90%;
+    height: 40%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: grid;
+    grid-template-rows:100% ;
+    grid-template-columns:33% 33% 33%;
+    
+  border-radius: 10px;
+  font-size: calc(2vh + 0.5vw);
+  
+  color: white;
+}
+.abpanel1 .sub div{
+  height: 100%;
+  width: 95%;
+  align-self: center;
+  justify-self: center;
+  box-shadow: 0px 0px 5px 2px #000000;
+  background-color: rgb(34, 33, 33);
+  text-align: center;
+  display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.abpanel1 .sub div img{
+    height: calc(3vh + 3vw);
+  }
 /*Mobile screen*/
 @media screen and (max-width: 640px) {
  
@@ -73,29 +169,34 @@ body{
     font-size: 5vw;
   }
   #homepanel{
-    height: 90vh;
-    width: 100vw;
-    display: grid;
+    
     grid-template-columns: 1fr;
     grid-template-rows: 50% 50%;
-    color: white;
-    text-align: center;
-    padding-left: 2.5vw;
-  padding-right: 2.5vw;
+    
   }
-
-  #homepanel img{
-    height: 100%;
-    justify-self: center;
-    align-self: center;
+  #abpanel{
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 1fr;
+    
   }
   
-  #homeinfo{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+  .abpanel1 #sum{
+    font-size: x-small;
+    padding: 5px;
+    border-radius: 5px;
   }
+  .abpanel1 .sub{
+    width: 95%;
+    height: 50%;
+  }
+  /* .abpanel1 .sub{
+    grid-template-rows:33% 33% 33% ;
+    grid-template-columns:100% ;
+  }
+  .abpanel1 .sub div{
+    flex-direction: row;
+  } */
+ 
 }
 
 /*Tab screen*/
@@ -115,35 +216,21 @@ body{
   }
   
    #homepanel{
-    height: 88vh;
-    width: 100vw;
-    display: grid;
+   
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr;
-    color: white;
-    text-align: center;
-    padding-left: 2.5vw;
-  padding-right: 2.5vw;
   }
-
-  #homepanel img{
-    width: 100%;
-    justify-self: center;
-    align-self: center;
+ #homepanel img{
+    
+    height: 60vh;
   }
   
   #homeinfo{
     height: 60%;
     align-self: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
     
   }
-  #homeinfo p{
-    font-size: 2vw;
-  }
+ 
 }
 
 /*Laptop screen*/
@@ -169,42 +256,29 @@ body{
     display: block;
   }
   #homepanel{
-    height: 88vh;
-    width: 100vw;
-    display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr;
-    color: white;
-    text-align: center;
-    padding-left: 2.5vw;
-  padding-right: 2.5vw;
   }
 
   #homepanel img{
-    
-    height: 88vh;
-    justify-self: center;
+    display: flex;
+    height: 80vh;
     align-self: center;
+    justify-self: center;
   }
   
   #homeinfo{
     height: 60%;
     align-self: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
     
   }
-  #homeinfo p{
-    font-size: 2vw;
-       
-  }
+ 
   #homeinfo h1{
     font-size: 4vw;
   }
-  #homeinfo h4{
-    font-size: 2.5vw;
-  }
   
+  #abpanel{
+    grid-template-rows: 1fr;
+    grid-template-columns: 50% 50%;
+  }
 }

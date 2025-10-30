@@ -3,6 +3,7 @@ import '../index.css'
 import Navbar from '../components/Navbar.jsx'
 import heroImage from '../assets/pradeep.png'
 import DotGrid from '../components/DotGrid';
+import About from '../pages/About.jsx'
 const Home = () => {
   return (
     <div>
@@ -28,13 +29,11 @@ const Home = () => {
         <img src={heroImage} alt="" />
         <div id="homeinfo">
           <h1>Hi, I'm Pradeep</h1>
-          <h4>Software Developer | Cybersecurity Analyst </h4>
-          <p style={{textAlign: 'justify', padding: '15px'}}>
-            I am a passionate frontend developer with expertise in React.js and a keen eye for UI/UX design. I love creating beautiful and functional web applications that provide an exceptional user experience.
-          </p>
+         
+          <p style={{textAlign: 'justify', padding: '15px'}}>Software eveloper | Cybersecurity Analyst </p>
         </div>
       </div>
-      
+      <About />
     </div>
   )
 }
