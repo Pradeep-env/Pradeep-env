@@ -208,10 +208,19 @@ body{
   align-items: center;
 }
 #contactpanel .m{
-  width: 90%;
+  width: 70%;
   height: 30%;
   background-color: rgb(34, 33, 33);
   border-radius: 10px;
+}
+
+#contactpanel .m .icons{
+  height: 60%;
+  width: 70%;
+  margin: 2% auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 /*Mobile screen*/
 @media screen and (max-width: 640px) {
@@ -274,7 +283,15 @@ body{
   height: 40vh;
   margin-bottom: 2vh;
 }
-}
+  #contactpanel{
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 1fr;
+
+  }
+  #contactpanel .m{
+  width: 90%;
+  height: 40%;
+}}
 /*Tab screen*/
 @media screen and ( min-width: 640px) and (max-width: 1024px) {
   

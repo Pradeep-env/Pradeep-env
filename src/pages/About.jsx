@@ -1,5 +1,5 @@
 import React from 'react'
-import Dualingo from '../assets/duolingo.svg'
+import Shreshta from '../assets/shreshtait_logo.jpeg'
 import '../index.css'
 const About = () => {
   return (
@@ -15,20 +15,23 @@ const About = () => {
                <div className="sub">
                 <div>
                   <h4 style={{ "margin":"3px auto"}}>Graduation</h4>
-                  <img src="https://i0.wp.com/sjbit.edu.in/wp-content/uploads/2021/07/VTU-Logo-250x250-1.png?w=250&ssl=1" alt="VTU, Belagavi" style={{"display":"block", "margin":"2px auto"}} />
+                  <a href="">
+                  <img src="https://i0.wp.com/sjbit.edu.in/wp-content/uploads/2021/07/VTU-Logo-250x250-1.png?w=250&ssl=1" alt="VTU, Belagavi" style={{"display":"block", "margin":"2px auto"}} /></a>
                   
                   <p>Computer Science</p>
                   <p style={{"color":"gold"}}>Gold Medalist</p>
                 </div>
                 <div>
                   <h4 style={{ "margin":"3px auto"}}>College</h4>
-                  <img src="https://sacollegenaregal.edu.in/wp-content/uploads/2020/09/VTECH-CODERS-College-Emblem-edited-768x958.jpg" alt="VTU, Belagavi" style={{"display":"block", "margin":"2px auto"}} />
+                  <a href="">
+                  <img src="https://sacollegenaregal.edu.in/wp-content/uploads/2020/09/VTECH-CODERS-College-Emblem-edited-768x958.jpg" alt="VTU, Belagavi" style={{"display":"block", "margin":"2px auto"}} /></a>
                   <p>Gadag</p>
                   <p>Karnataka, In</p>
                 </div>
                 <div>
                   <h4 style={{ "margin":"3px auto"}}>High-School</h4>
-                  <img src="https://navodaya.gov.in/nvs/system/modules/NVS.WEB/resources/images/nvs_logo_color1.png" alt="VTU, Belagavi" style={{"display":"block", "margin":"2px auto"}} />
+                  <a href="">
+                  <img src="https://navodaya.gov.in/nvs/system/modules/NVS.WEB/resources/images/nvs_logo_color1.png" alt="VTU, Belagavi" style={{"display":"block", "margin":"2px auto"}} /></a>
                   <p>Gadag</p>
                   <p>Karnataka, In</p>
                 </div>
@@ -66,21 +69,24 @@ const About = () => {
                <div className="sub">
                 <div>
                   <h4 style={{ "margin":"3px auto"}}>Web Developer</h4>
+                  <a href="">
                   <img src="https://codeclause.com/assets/img/Main%20Logo.png" alt="CodeClause" style={{"display":"block", "margin":"2px auto"}} />
-                  
+                  </a>
                   <p>Computer Science</p>
                   <p >Remote</p>
                 </div>
                 <div>
                   <h4 style={{ "margin":"3px auto"}}>Cybersecurity Intern</h4>
-                  <img src="https://sacollegenaregal.edu.in/wp-content/uploads/2020/09/VTECH-CODERS-College-Emblem-edited-768x958.jpg" alt="VTU, Belagavi" style={{"display":"block", "margin":"2px auto"}} />
-                  <p>Gadag</p>
+                  <a href="">
+                  <img src={Shreshta} alt="VTU, Belagavi" style={{"display":"block", "margin":"2px auto"}} /></a>
+                  <p>9/2024 - 3/2025</p>
                   <p>Belagavi</p>
                 </div>
                 <div>
                   <h4 style={{ "margin":"3px auto"}}>Cybersecurity Analyst</h4>
-                  <img src="https://navodaya.gov.in/nvs/system/modules/NVS.WEB/resources/images/nvs_logo_color1.png" alt="VTU, Belagavi" style={{"display":"block", "margin":"2px auto"}} />
-                  <p>Gadag</p>
+                  <a href="">
+                  <img src={Shreshta} alt="VTU, Belagavi" style={{"display":"block", "margin":"2px auto"}} /></a>
+                  <p>7/2025 - current</p>
                   <p>Belagavi</p>
                 </div>
                </div>
