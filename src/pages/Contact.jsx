@@ -31,21 +31,21 @@ const Contact = () => {
         <div className="m">
               <p style={{"color":"white", "textAlign":"center", "fontSize":"calc( 1.5vh + 1vw)", "marginTop":"3%"}}>Let's Learn Together</p>
               <div className="icons">
-                <a href="#"> <img src={logos.dualingo} alt="dualingo" style={{"display": "block", "height":"calc(2vh + 2vw)"}}/>
+                <a href="https://www.duolingo.com/profile/Pradeep_K_H" target='_blank'> <img src={logos.dualingo} alt="dualingo" style={{"display": "block", "height":"calc(2vh + 2vw)"}}/>
 </a>
                
-              <img src={logos.sololearn} alt="sololearn" style={{"display": "block", "height":"calc(2vh + 2vw)"}}/>
-              <img src={logos.geeks} alt="geeksforgeeks" style={{"display": "block", "height":"calc(2vh + 2vw)"}}/>
-              <img src={logos.leetcode} alt="leetcode" style={{"display": "block", "height":"calc(2vh + 2vw)"}}/> 
+             <a href="https://www.sololearn.com/en/profile/24237099" target='_blank'> <img src={logos.sololearn} alt="sololearn" style={{"display": "block", "height":"calc(2vh + 2vw)"}}/></a>
+             <a href="https://www.geeksforgeeks.org/user/pradeephpat/" target='_blank'> <img src={logos.geeks} alt="geeksforgeeks" style={{"display": "block", "height":"calc(2vh + 2vw)"}}/></a>
+             <a href="https://leetcode.com/u/pradeepkh312/" target='_blank'> <img src={logos.leetcode} alt="leetcode" style={{"display": "block", "height":"calc(2vh + 2vw)"}}/> </a>
               </div>
               
         </div>
         <div className="m">
                <p style={{"color":"white", "textAlign":"center", "fontSize":"calc( 1.5vh + 1vw)","marginTop":"3%"}}>Let's Build Together</p>
                 <div className="icons">
-                <img src={logos.linkedin} alt="linkedin" style={{"display": "block", "height":"calc(2vh + 2vw)"}}/>
-                <img src={logos.instagram} alt="instagram" style={{"display": "block", "height":"calc(2vh + 2vw)"}}/>
-                <img src={logos.github} alt="github"  style={{"display": "block", "height":"calc(2vh + 2vw)"}}/>
+                <a href="https://www.linkedin.com/in/pradeepholagundi/" target='_blank'><img src={logos.linkedin} alt="linkedin" style={{"display": "block", "height":"calc(2vh + 2vw)"}}/></a>
+                <a href="https://www.instagram.com/almost_pradeep/" target='_blank'><img src={logos.instagram} alt="instagram" style={{"display": "block", "height":"calc(2vh + 2vw)"}}/></a>
+                <a href="https://github.com/Pradeep3122003" target='_blank'><img src={logos.github} alt="github"  style={{"display": "block", "height":"calc(2vh + 2vw)"}}/></a>
                 </div>
         </div>
       </div>

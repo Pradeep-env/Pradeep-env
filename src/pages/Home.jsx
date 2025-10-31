@@ -34,8 +34,9 @@ const Home = () => {
          
           <p style={{textAlign: 'center', padding: '15px'}}>Software Developer <br /> Cybersecurity Analyst </p>
        <div id="links">
-        <a href="">Resume</a>
-        <a href="">Resume</a>
+        <a href="https://drive.google.com/file/d/1vWBab_B4NZiiMUR6ewDYSI9Vp-4Wa3o9/view?usp=sharing" target='_blank'>Resume</a>
+        <a href="mailto:pradeepkh312@gmail.com" target="_gmail">Send Email</a>
+
        </div>
        
         </div>

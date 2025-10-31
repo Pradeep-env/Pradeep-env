@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../index.css';
 import { MenuIcon, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
+import Home from '../pages/Home';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
@@ -29,10 +29,10 @@ const Navbar = () => {
 
       {(isOpen || !isMobile) && (
         <ul className='drop'>
-          <Link to='/'><li>Home</li></Link>
-          <Link to='/about'><li>About</li></Link>
-          <Link to='/projects'><li>Projects</li></Link>
-          <Link to='/contact'><li>Contact</li></Link>
+          <a href="#homepanel"><li>Home</li></a>
+          <a href='#about'><li>About</li></a>
+          <a href='#projects'><li>Projects</li></a>
+          <a href='#contact'><li>Contact</li></a>
         </ul>
       )}
 
