@@ -241,6 +241,42 @@ body{
   align-items: center;
   justify-content: space-evenly;
 }
+#form form{
+  width: 80%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(34, 33, 33);
+}
+form input, form textarea{
+  width: 90%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+form textarea{
+  resize: none;
+  height: 20vh;
+}
+form input{
+  height: 5vh;
+}
+form button{
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(176, 232, 7);
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  width: 50%;
+}
+form button:hover{
+  background-color: yellow;
+  transition: 0.3s;
+}
 /*Mobile screen*/
 @media screen and (max-width: 640px) {
  
@@ -310,7 +346,19 @@ body{
   #contactpanel .m{
   width: 90%;
   height: 40%;
-}}
+}
+form{
+  width: 90%;
+  height: 100vh;
+}
+form textarea{
+  
+  height: 20%;
+}
+form input{
+  height: 5vh;
+}
+}
 /*Tab screen*/
 @media screen and ( min-width: 640px) and (max-width: 1024px) {
   
