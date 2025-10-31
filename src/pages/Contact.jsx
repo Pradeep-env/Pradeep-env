@@ -19,7 +19,10 @@ const Contact = () => {
       "leetcode":"https://upload.wikimedia.org/wikipedia/commons/8/8e/LeetCode_Logo_1.png?20190719232508 ",
     }
 
-  
+  const formsub = (e) =>{
+    e.preventDefault();
+    alert("Form submission is currently disabled.")
+  }
   return (
     <div id='contact'>
       <h1>Contact</h1>
@@ -47,7 +50,7 @@ const Contact = () => {
         </div>
       </div>
       <div id="form">
-        <form action=""  >
+        <form onSubmit={formsub}  >
           <input type="text" placeholder='Name' required />
           <input type="email" placeholder='Email' required />
           <textarea name="message" id="message" cols="30" rows="10" placeholder='Your Message' required></textarea>
