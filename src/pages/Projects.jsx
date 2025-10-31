@@ -7,7 +7,7 @@ import shg from '../assets/shg.png'
 import portfolio from '../assets/portfolio.png'
 import mysql from '../assets/mysql.png'
 import dsa from '../assets/dsa.png'
-
+import { motion } from 'framer-motion'
 
 const Projects = () => {
   const project = [
@@ -85,7 +85,10 @@ const Projects = () => {
     "php":"https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1067px-PHP-logo.svg.png?20180502235434"
   }]
   return (
-    <div id='projects'>
+    <motion.div initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: false }} id='projects'>
       <h1>Recent Projects</h1>
       <div id="project">
         {project.map((proj, index) => (
@@ -108,7 +111,7 @@ const Projects = () => {
        
         
       </div>
-    </div>
+    </motion.div>
   )
 }
 

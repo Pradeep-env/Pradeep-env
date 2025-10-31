@@ -1,9 +1,14 @@
 import React from 'react'
 import Shreshta from '../assets/shreshtait_logo.jpeg'
+import { motion } from "framer-motion";
 import '../index.css'
 const About = () => {
   return (
-    <div id='about'>
+    
+    <motion.div initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: false }} id='about'>
         <h1>About Me</h1>
         <div id="abpanel">
             <div className="abpanel1" >
@@ -92,7 +97,7 @@ const About = () => {
                </div>
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 

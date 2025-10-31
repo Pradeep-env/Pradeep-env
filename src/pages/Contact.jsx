@@ -1,5 +1,6 @@
 import React from 'react'
 import '../index.css'
+import {motion} from 'framer-motion'
 const Contact = () => {
   const logos=
     {
@@ -24,7 +25,10 @@ const Contact = () => {
     alert("Form submission is currently disabled.")
   }
   return (
-    <div id='contact'>
+    <motion.div initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: false }} id='contact'>
       <h1>Contact</h1>
       <div id="contactpanel">
       <div id="media">
@@ -57,7 +61,7 @@ const Contact = () => {
           <button type="submit">Send</button>
         </form>
         </div></div>
-    </div>
+    </motion.div>
   )
 }
 
