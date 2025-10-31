@@ -32,8 +32,14 @@ const Home = () => {
         <div id="homeinfo">
           <h1>Hi, I'm Pradeep</h1>
          
-          <p style={{textAlign: 'justify', padding: '15px'}}>Software eveloper | Cybersecurity Analyst </p>
+          <p style={{textAlign: 'center', padding: '15px'}}>Software Developer <br /> Cybersecurity Analyst </p>
+       <div id="links">
+        <a href="">Resume</a>
+        <a href="">Resume</a>
+       </div>
+       
         </div>
+        
       </div>
       <About />
       <Projects />
