@@ -57,7 +57,7 @@ const Projects = () => {
       "name": "Portfolio Website",
       "pic": portfolio,
       "techstack": ["vs","figma","react","git"],
-      "link": "https://pradeepkh.netlify.app/",
+      "link": "https://www.figma.com/design/3HI8dpbFW7s4McA4VAFAbg/Portfolio?node-id=0-1&t=dh1D8yg6XCFZ394J-1",
       "github": "#"
     }
   ]
