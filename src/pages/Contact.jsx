@@ -49,7 +49,7 @@ const Contact = () => {
                 <div className="icons">
                 <a href="https://www.linkedin.com/in/pradeepholagundi/" target='_blank'><img src={logos.linkedin} alt="linkedin" style={{"display": "block", "height":"calc(2vh + 2vw)"}}/></a>
                 <a href="https://www.instagram.com/almost_pradeep/" target='_blank'><img src={logos.instagram} alt="instagram" style={{"display": "block", "height":"calc(2vh + 2vw)"}}/></a>
-                <a href="https://github.com/Pradeep3122003" target='_blank'><img src={logos.github} alt="github"  style={{"display": "block", "height":"calc(2vh + 2vw)"}}/></a>
+                <a href="https://github.com/Pradeep-env" target='_blank'><img src={logos.github} alt="github"  style={{"display": "block", "height":"calc(2vh + 2vw)"}}/></a>
                 </div>
         </div>
       </div>
@@ -66,3 +66,4 @@ const Contact = () => {
 }
 
 export default Contact
+
