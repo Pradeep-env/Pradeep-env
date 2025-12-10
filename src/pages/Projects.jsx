@@ -16,21 +16,21 @@ const Projects = () => {
       "pic": mysql,
       "techstack": ["ubuntu","cpp","flask","html","css","git"],
       "link": "#",
-      "github": "https://github.com/Pradeep3122003/mysql"
+      "github": "https://github.com/Pradeep-env/mysql"
     },
     {
       "name": "Self Help Group",
       "pic": shg,
       "techstack": ["ubuntu","vs","figma","postman","flask","react","postgres","git"],
       "link": "#",
-      "github": "https://github.com/Pradeep3122003/saraswati-sangha"
+      "github": "https://github.com/Pradeep-env/saraswati-sangha"
     },
     {
       "name": "DataStructure Visualizer",
       "pic": dsa, 
       "techstack": ["ubuntu","cpp","git"],
       "link": "#",
-      "github": "https://github.com/Pradeep3122003/DataStructures"
+      "github": "https://github.com/Pradeep-env/DataStructures"
     },
     {
       "name": "Prenatal Care App",
@@ -51,7 +51,7 @@ const Projects = () => {
       "pic": train,
       "techstack": ["vs","ubuntu","html","css","php","sql","git"],
       "link": "http://mytrain.fwh.is/",
-      "github": "https://github.com/Pradeep3122003/MyTrain"
+      "github": "https://github.com/Pradeep-env/MyTrain"
     },
     {
       "name": "Portfolio Website",
@@ -116,3 +116,4 @@ const Projects = () => {
 }
 
 export default Projects
+
