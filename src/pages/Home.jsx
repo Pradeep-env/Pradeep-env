@@ -34,7 +34,7 @@ const Home = () => {
          
           <p style={{textAlign: 'center', padding: '15px'}}>Software Developer <br /> Cybersecurity Analyst </p>
        <div id="links">
-        <a href="https://drive.google.com/file/d/1vWBab_B4NZiiMUR6ewDYSI9Vp-4Wa3o9/view?usp=sharing" target='_blank'>Resume</a>
+        <a href="https://drive.google.com/file/d/1ry8bG6FR5TOY-dQ5gz9jobXa9gkvn77C/view?usp=sharing" target='_blank'>Resume</a>
         <a href="mailto:pradeepkh312@gmail.com" onClick={() => window.location = 'mailto:pradeepkh312@gmail.com'}>Send Email</a>
 
        </div>
@@ -50,3 +50,4 @@ const Home = () => {
 }
 
 export default Home
+
