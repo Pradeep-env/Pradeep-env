@@ -77,7 +77,7 @@ const About = () => {
                   <a href="https://internship.codeclause.com/" target='_blank'>
                   <img src="https://codeclause.com/assets/img/Main%20Logo.png" alt="CodeClause" style={{"display":"block", "margin":"2px auto"}} />
                   </a>
-                  <p>Computer Science</p>
+                  <p>CodeClause</p>
                   <p >Remote</p>
                 </div>
                 <div>
@@ -91,7 +91,7 @@ const About = () => {
                   <h4 style={{ "margin":"3px auto"}}>Cybersecurity Analyst</h4>
                   <a href="https://shreshtait.com/" target='_blank'>
                   <img src={Shreshta} alt="VTU, Belagavi" style={{"display":"block", "margin":"2px auto"}} /></a>
-                  <p>7/2025 - current</p>
+                  <p>6/2025 - 10/2025</p>
                   <p>Belagavi</p>
                 </div>
                </div>
@@ -102,3 +102,4 @@ const About = () => {
 }
 
 export default About
+
