@@ -30,6 +30,7 @@ Web security fundamentals · automation · reconnaissance techniques
 
 **Email**: pradeepholagundi@gmail.com  
 **LinkedIn**: https://www.linkedin.com/in/pradeepholagundi  
+**Portfolio**: https://pradeepkh.netlify.app/
 
 ---
 
